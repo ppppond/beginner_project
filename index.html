@@ -4,50 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <hr style="border: 2px solid black; width: 100%;">
-        <h1>Pond</h1>
-        <p style="color: green;">Junior Frontend Developer</p>
-        <label>123 Street</label> <br>
-        <label>City, ST 12345</label> <br>
-        <label>(123) 456789</label> <br>
+        <header>
+            <h1>Pond</h1>
+            <p class="subtitle">Junior Frontend Developer</p>
         
-        <p style="color: green;">Skill</p>
-        <label>HTML, CSS, JavaScript, Accessibility, Figma to Design, Responsive Web Design</label><br>
-        <label for="">Technical Writing, Presentation</label>
-        <br>
-        <p style="color: green;">Education</p>
+            <address>
+                123 Street<br>
+                City, ST 12345<br>
+                <a href="tel:123456789">(123) 456789</a>
+            </address>
+        </header>
 
-            <section>
-            <h3 style="color: blue; margin-bottom: 5px;">Company Test,London - 4, Frontend developer</h3>
-                <p>
-                    <time datetime="2026 06">June 2026</time>
-                    <time datetime="206 09">September 2026</time>
-                </p>
-                <ul>
-                <li >Create a web</li>
-                <li>Create a web</li>
-                <li>Create a web</li>
+        <hr>
+
+        <section class="skills">
+            <h2>Skill</h2>
+            <ul>
+                <li>HTML, CSS, Javascript</li>
+                <li>Accessibility, Responsive Web Design</li>
+                <li>Figma to Design</li>
+                <li>Technical Writing, Presentation</li>
             </ul>
-            <label>Skills: List of skill</label>
-            </section>
-        
-        <section>
-            <h4 style="color: blue;">Company Name, Location - job Title</h4>
-        <label >September 2026 to December 2026</label>
-        <ul>
-            <li>Create game</li>
-            <li>Create game</li>
-            <li>Create game</li>
-        </ul>
-        <label>Skills: List of skill</label>
+        </section>
+
+        <section class="experience">
+            <h2>Experience</h2> <article class="job">
+                <div class="job-header">
+                    <h3>Frontend Developer - Company Test, London</h3>
+                    <p class="date">
+                        <time datetime="2026-06">June 2026</time>
+                        <time datetime="2026-09">- September 2026</time>
+                    </p>
+                </div>
+                <ul>
+                    <li>Create a web application using React</li>
+                    <li>Designed responsive layout</li>
+                    <li>Collaborated with backend team</li>
+                </ul>
+            </article>
+
+            <article class="job">
+                <div class="job-header">
+                    <h3>Game Developer - Company Name, Location</h3>
+                    <p class="date">
+                        <time datetime="2026-09">September 2026</time>
+                        <time datetime="2026-12">- December 2026</time>
+                    </p>
+                </div>
+                <ul>
+                    <li>Create game logic</li>
+                    <li>Manage state management</li>
+                    <li>Optimize performance</li>
+                </ul>
+            </article>
         </section>
         
         <footer>
-<h3>Across the Internet</h3>
-        <a href="https://github.com/ppppond" target="_blank">Github</a>
+            <h3>Across the Internet</h3>
+            <a href="https://github.com/ppppond" target="_blank">Github</a>
         </footer>
         
     </div>
